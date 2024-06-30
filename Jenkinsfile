@@ -5,6 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
+				git 'https://github.com/yevgenygo/jenkinsfile'
             }
         }
         stage('Test') {
