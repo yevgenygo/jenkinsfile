@@ -14,7 +14,7 @@ pipeline {
 
 		bat 'python --version'
 		bat 'dir' 
-		bat 'start /b python rest_appp.py'
+		bat 'start /b python rest_app.py'
 		echo 'ttttttttttttttttttttt'
             }
         }
