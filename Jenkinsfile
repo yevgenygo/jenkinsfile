@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-				git 'https://github.com/yevgenygo/jenkinsfile'
+				git 'https://github.com/yevgenygo/-Devops_Experts_Project_Part2'
             }
         }
         stage('Test') {
