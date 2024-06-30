@@ -2,15 +2,16 @@ pipeline {
     agent any
 
     stages {
-        stage('Build') {
+        stage('clone the code') {
             steps {
-                echo 'Building..'
-				git 'https://github.com/yevgenygo/-Devops_Experts_Project_Part2'
+                echo 'cloning web server code..'
+		git 'https://github.com/yevgenygo/-Devops_Experts_Project_Part2'
             }
         }
-        stage('Test') {
+        stage('run backend') {
             steps {
-                echo 'Testing..'
+                echo 'run backend..'
+		bat 'start /min python rest_app.py'
             }
         }
         stage('Deploy') {
