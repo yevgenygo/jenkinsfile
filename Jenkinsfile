@@ -13,7 +13,7 @@ pipeline {
                 echo 'run backend..'
 
 		bat 'python --version'
-		bat 'dir'
+		bat 'dir' 
 		bat 'python rest_app.py'
             }
         }
