@@ -10,11 +10,8 @@ pipeline {
         }
         stage('run backend') {
             steps {
-                echo 'run backend..'
-
-		bat 'python --version'
-		bat 'dir' 
-		bat 'start /b python rest_app.py'
+                echo 'run backend..' 
+		bat 'start /b python rest_app.py > output.log 2>&1'
 		echo 'ttttttttttttttttttttt'
             }
         }
