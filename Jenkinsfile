@@ -12,7 +12,9 @@ pipeline {
             steps {
                 echo 'run backend..'
 
-		bat 'start /min python rest_app.py'
+		bat 'python --version'
+		bat 'dir'
+		bat 'start/min python rest_app.py'
             }
         }
         stage('Deploy') {
