@@ -14,7 +14,7 @@ pipeline {
 
 		bat 'python --version'
 		bat 'dir' 
-		bat 'python rest_app.py'
+		bat 'start /min python rest_app.py'
             }
         }
         stage('Deploy') {
