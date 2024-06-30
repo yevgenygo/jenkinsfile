@@ -11,7 +11,9 @@ pipeline {
         stage('run backend') {
             steps {
                 echo 'run backend..'
-		dir
+		script {
+			dir
+		}
 		bat 'start /min python rest_app.py'
             }
         }
