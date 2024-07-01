@@ -11,8 +11,8 @@ pipeline {
         stage('run backend') {
             steps {
                 echo 'run backend..' 
-		bat 'start /b python rest_app.py > output.log 2>&1'
-		echo 'ttttttttttttttttttttt'
+		        sh 'nohup python web_app.py &'
+		        echo 'ttttttttttttttttttttt'
             }
         }
         stage('Deploy') {
