@@ -1,7 +1,5 @@
 pipeline {
-    agent {
-        node {
-            name 'Built-In Node'
+    agent { 'Built-In Node'
         }
     }
 
