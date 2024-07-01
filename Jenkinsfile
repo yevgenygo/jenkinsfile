@@ -13,6 +13,7 @@ pipeline {
                 echo 'run backend..' 
 		        sh 'nohup python3 rest_app.py &'
 		        sh 'nohup python3 web_app.py &'
+		        sh 'python3 backend_testing.py'
 		        echo 'ttttttttttttttttttttt'
             }
         }
