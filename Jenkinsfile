@@ -1,7 +1,7 @@
 pipeline {
     agent {
         node {
-            name 'build-server-1'
+            name 'Built-In Node'
         }
     }
 
