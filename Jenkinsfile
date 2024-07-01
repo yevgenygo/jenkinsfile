@@ -1,7 +1,5 @@
 pipeline {
-    agent { 'Built-In Node'
-        }
-    }
+    agent { 'Built-In Node' }
 
     stages {
         stage('clone the code') {
