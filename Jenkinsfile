@@ -1,5 +1,9 @@
 pipeline {
-    agent any
+    agent {
+        node {
+            name 'build-server-1'
+        }
+    }
 
     stages {
         stage('clone the code') {
