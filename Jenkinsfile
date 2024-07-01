@@ -20,7 +20,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
-                sleep 30
+                sleep 10
             }
         }
     }
