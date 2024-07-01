@@ -11,13 +11,14 @@ pipeline {
         stage('run backend') {
             steps {
                 echo 'run backend..' 
-		        sh 'python3 rest_app.py'
+		        sh 'nohup python3 rest_app.py '
 		        echo 'ttttttttttttttttttttt'
             }
         }
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
+                sleep 300
             }
         }
     }
