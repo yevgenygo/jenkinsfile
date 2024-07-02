@@ -12,8 +12,8 @@ pipeline {
             steps {
                 echo 'run backend..' 
 		        bat 'start /min python rest_app.py &'
-		        //sh 'bat 'start /min python web_app.py &'
-		        //sh 'python3 backend_testing.py'
+		        bat 'start /min python web_app.py &'
+		        bat 'start /min python backend_testing.py'
 		        echo 'ttttttttttttttttttttt'
             }
         }
