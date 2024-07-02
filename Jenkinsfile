@@ -13,7 +13,7 @@ pipeline {
                 echo 'run backend..' 
 		        bat 'start /min python rest_app.py &'
 		        bat 'start /min python web_app.py &'
-		        bat 'start /min python backend_testing.py'
+		        bat 'start /min python -u backend_testing.py'
 		        echo 'ttttttttttttttttttttt'
             }
         }
