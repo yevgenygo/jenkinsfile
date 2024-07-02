@@ -1,7 +1,7 @@
 pipeline {
     agent { label 'master' }
     environment {
-        AWS_ACCESS_KEY_ID = credentials('1')
+        de_cred = credentials('1')
     }
     stages {
         stage('clone the code') {
@@ -15,7 +15,8 @@ pipeline {
 			//	db_cred = credentials('1')
 			//	}
             steps {
-                echo 'run backend..' 
+                echo 'run backend..'
+                echo 'pass $de_cred'
 		      //  echo 'cred $1'
 				bat 'start /min python rest_app.py &'
 		        bat 'start /min python web_app.py &'
