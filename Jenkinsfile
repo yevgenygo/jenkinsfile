@@ -1,8 +1,7 @@
 pipeline {
     agent { label 'master' }
     environment {
-        AWS_ACCESS_KEY_ID     = credentials('jenkins-aws-secret-key-id')
-        AWS_SECRET_ACCESS_KEY = credentials('jenkins-aws-secret-access-key')
+        AWS_ACCESS_KEY_ID = credentials('1')
     }
     stages {
         stage('clone the code') {
