@@ -16,7 +16,7 @@ pipeline {
 			//	}
             steps {
                 echo 'run backend..'
-                echo 'pass $de_cred'
+                echo "pass $de_cred"
 		      //  echo 'cred $1'
 				bat 'start /min python rest_app.py &'
 		        bat 'start /min python web_app.py &'
